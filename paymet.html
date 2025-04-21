@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Information - lookfamous Academic Center</title>
+    <style>
+        :root {
+            --primary:purple;
+            --secondary: #FFD700;
+            --accent: #FFFFFF;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background-color: var(--primary);
+            color: white;
+            padding: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+        .logo span {
+            color: var(--secondary);
+        }
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+        nav ul li {
+            margin-left: 1.5rem;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        h1 {
+            color: var(--primary);
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        .payment-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+        }
+        .fee-structure {
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            padding: 2rem;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .fee-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0;
+        }
+        .fee-table th, .fee-table td {
+            padding: 0.8rem;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        .fee-table th {
+            background-color: var(--primary);
+            color: white;
+        }
+        .fee-table tr:hover {
+            background-color: #f1f1f1;
+        }
+        .account-details {
+            background-color: #f0f8ff;
+            border-radius: 8px;
+            padding: 2rem;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .payment-methods {
+            margin-top: 2rem;
+        }
+        .payment-option {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem;
+            padding: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        .payment-option:hover {
+            border-color: var(--primary);
+        }
+        .payment-option.selected {
+            border-color: var(--primary);
+            background-color: #f0fff0;
+        }
+        .payment-option img {
+            width: 50px;
+            margin-right: 1rem;
+        }
+        .btn {
+            display: inline-block;
+            background-color: var(--secondary);
+            color: var(--primary);
+            padding: 0.8rem 1.5rem;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+            font-size: 1rem;
+            margin-top: 1rem;
+        }
+        .btn-block {
+            display: block;
+            width: 100%;
+        }
+        footer {
+            background-color: var(--primary);
+            color: white;
+            text-align: center;
+            padding: 2rem 1rem;
+            margin-top: 2rem;
+        }
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 2rem;
+            margin: 1rem 0;
+        }
+        .notice {
+            background-color: #fff8e1;
+            padding: 1rem;
+            border-left: 4px solid var(--secondary);
+            margin: 1rem 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">lookfamous<span>Academic</span>Center</div>
+        <nav>
+            <ul>
+                <li><a href="Lookfamouscoaching center.html">Home</a></li>
+                <li><a href="Lookfamouscoaching center.html#programs">Programs</a></li>
+                <li><a href="Lookfamouscoaching center.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>Payment Information</h1>
+        
+        <div class="payment-container">
+            <div class="fee-structure">
+                <h2>Our Fee Structure</h2>
+                
+                <table class="fee-table">
+                    <thead>
+                        <tr>
+                            <th>Program</th>
+                            <th>Duration</th>
+                            <th>Fee (₦)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>IJMB Program</td>
+                            <td>12 months</td>
+                            <td>230,000</td>
+                        </tr>
+                        <tr>
+                            <td>JUPEB Program</td>
+                            <td>8 months</td>
+                            <td>250,000</td>
+                        </tr>
+                        <tr>
+                            <td>WAEC/NECO Prep</td>
+                            <td>6 months</td>
+                            <td>150,000</td>
+                        </tr>
+                        <tr>
+                            <td>GCE (WAEC/NECO)</td>
+                            <td>6 months</td>
+                            <td>180,000</td>
+                        </tr>
+                        <tr>
+                            <td>Post-UTME Prep</td>
+                            <td>3 months</td>
+                            <td>100,000</td>
+                        </tr>
+                        <tr>
+                            <td>NABTEB Prep</td>
+                            <td>6 months</td>
+                            <td>170,000</td>
+                        </tr>
+                        <tr>
+                            <td>Hostel Accommodation</td>
+                            <td>Per Semester</td>
+                            <td>120,000</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <div class="notice">
+                    <p><strong>Note:</strong> Fees are payable in full at the beginning of the program or in two installments (50% at registration, 50% within first month).</p>
+                </div>
+            </div>
+            
+            <div class="account-details">
+                <h2>Bank Account Details</h2>
+                <p>Make payment to any of the following accounts:</p>
+              
+                
+                <div style="background-color: white; padding: 1rem; border-radius: 5px; margin: 1rem 0;">
+                    <h3>OPAY Bank</h3>
+                    <p><strong>Account Name:</strong> IBRAHIM LUKMAN AYINDE </p>
+                    <p><strong>Account Number:</strong> 8060317378</p>
+                </div>
+                
+                <div style="background-color: white; padding: 1rem; border-radius: 5px; margin: 1rem 0;">
+                    <h3>GTBank</h3>
+                    <p><strong>Account Name:</strong> IBRAHIM LUKMAN AYINDE </p>
+                    <p><strong>Account Number:</strong>0116163982 </p>
+                </div>
+                
+                <div class="payment-methods">
+                    <h3>Online Payment Methods</h3>
+                    
+                    <div class="payment-option selected">
+                        <img src="https://via.placeholder.com/50?text=Bank" alt="Bank Transfer">
+                        <div>
+                            <h4>Bank Transfer</h4>
+                            <p>Direct transfer to our account</p>
+                        </div>
+                    </div>
+                    
+                    <div class="payment-option">
+                        <img src="https://via.placeholder.com/50?text=POS" alt="POS Payment">
+                        <div>
+                            <h4>POS Payment</h4>
+                            <p>Available at our office</p>
+                        </div>
+                    </div>
+                    
+                    <div class="payment-option">
+                        <img src="https://via.placeholder.com/50?text=Paystack" alt="Paystack">
+                        <div>
+                            <h4>Paystack</h4>
+                            <p>Secure online payment</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="notice">
+                    <p><strong>Important:</strong> After payment, send your payment evidence (screenshot or teller) to lookfamous001@gmail.com or WhatsApp to +2348060317378 with your full name.</p>
+                </div>
+                
+                <button class="btn btn-block" onclick="window.location.href='confirmation.html'">I Have Made Payment</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <h2>Payment Assistance</h2>
+        <div class="contact-info">
+            <div>
+                <h3>Payment Queries</h3>
+                <p>+234 803 456 7890</p>
+                <p>lookfamous001@gmail.com</p>
+            </div>
+            <div>
+                <h3>Office Hours</h3>
+                <p>Monday-Friday: 8am-5pm</p>
+                <p>Saturday: 10am-3pm</p>
+            </div>
+        </div>
+        <p>&copy; 2023 Lookfamous Academic Center. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        // Payment option selection
+        const paymentOptions = document.querySelectorAll('.payment-option');
+        paymentOptions.forEach(option => {
+            option.addEventListener('click', () => {
+                paymentOptions.forEach(opt => opt.classList.remove('selected'));
+                option.classList.add('selected');
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lookfamous Academic Center - Premium Coaching & Hostel Services</title>
+    <style>
+        :root {
+            --primary:purple;
+            --secondary: #FFD700;
+            --accent: #FFFFFF;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            color:purple;
+        }
+        header {
+            background-color: var(--primary);
+            color: white;
+            padding: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+        .logo span {
+            color: var(--secondary);
+        }
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+        nav ul li {
+            margin-left: 1.5rem;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .hero {
+            background-image: linear-gradient(rgba(100, 4, 124, 0.7), rgba(164, 7, 196, 0.7)), url('classroom.jpg');
+            background-size: cover;
+            color: white;
+            text-align: center;
+            padding: 5rem 1rem;
+        }
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto 2rem;
+        }
+        .btn {
+            display: inline-block;
+            background-color: var(--secondary);
+            color: var(--primary);
+            padding: 0.8rem 1.5rem;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            margin: 0.5rem;
+        }
+        .programs {
+            padding: 3rem 1rem;
+            text-align: center;
+        }
+        .programs h2 {
+            color: var(--primary);
+            font-size: 2rem;
+            margin-bottom: 2rem;
+        }
+        .program-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .program-card {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 1.5rem;
+            transition: transform 0.3s;
+        }
+        .program-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        .program-card h3 {
+            color: var(--primary);
+        }
+        footer {
+            background-color: var(--primary);
+            color: white;
+            text-align: center;
+            padding: 2rem 1rem;
+            margin-top: 2rem;
+        }
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 2rem;
+            margin: 1rem 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Lookfamous <span>Academic</span>Center</div>
+        <nav>
+            <ul>
+                <li><a href="#programs">Programs</a></li>
+                <li><a href="#hostel">Hostel</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="apply.html" class="btn">Register Now</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Excel in Your Academic Journey</h1>
+        <p>Premium coaching for IJMB, JUPEB, WAEC, NECO, Post-UTME and more with comfortable hostel accommodation for students</p>
+        <a href="#programs" class="btn">Our Programs</a>
+        <a href="apply.html" class="btn" style="background-color: white;">Apply Now</a>
+    </section>
+
+    <section class="programs" id="programs">
+        <h2>Our Academic Programs</h2>
+        <div class="program-grid">
+            <div class="program-card">
+                <h3>IJMB</h3>
+                <p>12-month intensive program for direct entry admission into 200 level in Nigerian universities</p>
+                <a href="apply.html" class="btn" style="padding: 0.5rem 1rem; font-size: 0.9rem;">Apply Now</a>
+            </div>
+            <div class="program-card">
+                <h3>JUPEB</h3>
+                <p>Advanced level program recognized by Nigerian universities for direct entry admission</p>
+                <a href="apply.html" class="btn" style="padding: 0.5rem 1rem; font-size: 0.9rem;">Apply Now</a>
+            </div>
+            <div class="program-card">
+                <h3>WAEC/NECO</h3>
+                <p>Comprehensive preparation for SSCE exams with experienced tutors and past question drilling</p>
+                <a href="apply.html" class="btn" style="padding: 0.5rem 1rem; font-size: 0.9rem;">Apply Now</a>
+            </div>
+            <div class="program-card">
+                <h3>GCE (WAEC/NECO)</h3>
+                <p>Special classes for private candidates preparing for General Certificate Examinations</p>
+                <a href="apply.html" class="btn" style="padding: 0.5rem 1rem; font-size: 0.9rem;">Apply Now</a>
+            </div>
+            <div class="program-card">
+                <h3>Post-UTME</h3>
+                <p>Targeted coaching to help students excel in various universities' post-UTME screenings</p>
+                <a href="apply.html" class="btn" style="padding: 0.5rem 1rem; font-size: 0.9rem;">Apply Now</a>
+            </div>
+            <div class="program-card">
+                <h3>NABTEB</h3>
+                <p>Preparation for National Business and Technical Examinations Board exams</p>
+                <a href="apply.html" class="btn" style="padding: 0.5rem 1rem; font-size: 0.9rem;">Apply Now</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="hostel" id="hostel" style="padding: 3rem 1rem; background-color: #f5f5f5;">
+        <div style="max-width: 1200px; margin: 0 auto;">
+            <h2 style="text-align: center; color: var(--primary);">Our Hostel Facilities</h2>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; align-items: center; margin-top: 2rem;">
+                <div>
+                    <h3>Safe & Comfortable Accommodation</h3>
+                    <p>Our hostel provides:</p>
+                    <ul>
+                        <li>24/7 security and CCTV surveillance</li>
+                        <li>Spacious, well-ventilated rooms</li>
+                        <li>Regular power supply with backup generator</li>
+                        <li>Clean water supply</li>
+                        <li>Study areas and common rooms</li>
+                        <li>Laundry services</li>
+                        <li>Proximity to lecture centers</li>
+                    </ul>
+                    <a href="#contact" class="btn">Inquire About Hostel</a>
+                </div>
+                <div>
+                    <img src="hostel.jpg" alt="Hostel facilities" style="width: 100%; border-radius: 8px;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <h2>Contact Lookfamous Academic Center</h2>
+        <div class="contact-info">
+            <div>
+                <h3>Address</h3>
+                <p>123 Academic Way, Education City</p>
+                <p>Ilorin Nigeria</p>
+            </div>
+            <div>
+                <h3>Phone</h3>
+                <p>+2348060317378</p>
+                <p>+2349050055123</p>
+            </div>
+            <div>
+                <h3>Email</h3>
+                <p>info@lookfamous001@gmail.com</p>
+                <p>Lookfamous001@gmail.com</p>
+            </div>
+        </div>
+        <p>&copy; 2023 Lookfamous Academic Center. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
